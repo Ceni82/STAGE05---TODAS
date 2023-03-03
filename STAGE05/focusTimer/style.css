@@ -1,0 +1,83 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bgColor:#121214;
+    --base-color:194;
+    --bgButtonsColor:hsl(var(--base-color), 100%, 63%);
+    --bgButtonsColorLight: hsla(var(--base-color), 100%, 63%, 0.13);
+    --textColor:#FFFFFF;
+    
+
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:var(--bgColor);
+    color:var(--textColor);
+    min-height: 100vh;
+
+    display:grid;
+
+}
+main{
+    justify-self: center;
+    align-self: end;
+}
+
+
+
+
+button{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+
+}
+
+#timer {
+    font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+    font-weight: bold;
+    display: flex;
+
+    margin-bottom: 1.6rem;;
+}
+
+.hide{
+    display:none;
+}
+.play svg path,
+.pause svg path,
+.sound-on svg path {
+   fill:var(--bgButtonsColor);
+}
+
+botton svg {
+    width:clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+
+
+#controls {
+    background: var(--bgButtonsColorLight);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:3.2rem;
+
+    border-radius: 9999px;
+
+    width:clamp(10rem, 10rem + 30vw, 22.8rem);
+    height: clamp(2rem, 2rem + 10vw, 10.8rem);
+}
+
+footer {
+    justify-self: end;
+    align-self: end;
+
+    padding:0 4rem 3.2rem 0;
+}
